@@ -15,13 +15,12 @@ char inputChar(char c)
 char *inputString()
 {
     // TODO: rewrite this function
-    char *str = (char *) malloc(sizeof(char) * 6);
-    str[0] = 'r';
-    str[1] =  'e';
-    str[2] =  's';
-    str[3] =  'e';
-    str[4] =  't';
-    str[5] =  '\0';
+    char *str = (char *) malloc(sizeof(char) * 5);
+    str[0] = (rand() % (122 - 97 + 1)) + 97; 
+    str[1] =  (rand() % (122 - 97 + 1)) + 97; 
+    str[2] =  (rand() % (122 - 97 + 1)) + 97; 
+    str[3] =  (rand() % (122 - 97 + 1)) + 97; 
+    str[4] =  (rand() % (122 - 97 + 1)) + 97; 
     return str;
 }
 
